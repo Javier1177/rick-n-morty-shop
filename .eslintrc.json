@@ -50,16 +50,6 @@
 			}
 		],
 		"@typescript-eslint/require-await": "off",
-		"@typescript-eslint/no-explicit-any": "warn",
-		"@typescript-eslint/ban-types": [
-			"error",
-			{
-				"extendDefaults": true,
-				"types": {
-					"{}": false
-				}
-			}
-		],
 		"react-hooks/exhaustive-deps": "off",
 		"object-shorthand": "error",
 		"no-console": "warn",
