@@ -1,9 +1,14 @@
-import { useState } from 'react';
-import './App.css';
+import Layout from './components/Layout';
+import Home from './pages/Home';
 
 function App() {
-	const [count, setCount] = useState(0);
-	return <></>;
+	return (
+		<>
+			<Layout>
+				<Home />
+			</Layout>
+		</>
+	);
 }
 
 export default App;
