@@ -5,7 +5,6 @@ import Home from './pages/Home';
 
 function App() {
 	const fetchProducts = useProductList(state => state.fetchProductList);
-	const productList = useProductList(state => state.productList);
 
 	useEffect(() => {
 		fetchProducts();
