@@ -1,4 +1,4 @@
-import { useProductList } from '../../store/productsList/productsList';
+import { useFetchMovies } from '../../hooks/useFetchMovies';
 import ProductCard from '../ProductCard';
 import Spinner from '../Spinner';
 
@@ -7,18 +7,18 @@ import './productList.style.scss';
 const baseClass = 'productList';
 
 const ProductList = () => {
-	const productList = useProductList(state => state.productList);
-	if (!productList.length) return <Spinner />;
+	const { isLoading, productList } = useFetchMovies();
+
+	if (isLoading) return <Spinner />;
 
 	return (
-		<div className={`${baseClass}-container`}>
-			<div>asdad</div>
-			<div className={`${baseClass}-cards`}>
-				{productList.map(product => (
-					<ProductCard product={product} key={product.id} />
-				))}
-			</div>
-		</div>
+		<ul className={`${baseClass}-container`}>
+			{productList.map(product => (
+				<li key={product.id}>
+					<ProductCard product={product} />
+				</li>
+			))}
+		</ul>
 	);
 };
 

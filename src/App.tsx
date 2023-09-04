@@ -1,21 +1,14 @@
-import { useEffect } from 'react';
-import { useProductList } from './store/productsList/productsList';
-import Layout from './components/Layout';
+import Header from './components/Header';
 import Home from './pages/Home';
 
+import './App.scss';
+
 function App() {
-	const fetchProducts = useProductList(state => state.fetchProductList);
-
-	useEffect(() => {
-		fetchProducts();
-	}, []);
-
 	return (
-		<>
-			<Layout>
-				<Home />
-			</Layout>
-		</>
+		<div className="shop">
+			<Header />
+			<Home />
+		</div>
 	);
 }
 
