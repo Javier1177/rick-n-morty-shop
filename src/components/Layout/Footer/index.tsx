@@ -1,10 +1,10 @@
-import './index.styles.scss';
+import './footer.styles.scss';
 
-const className = 'footer';
+const baseClass = 'footer';
 
 const Footer = () => {
 	return (
-		<footer className={`${className}-container`}>
+		<footer className={`${baseClass}-container`}>
 			&copy; 2023 Rick & Morty Shop. All Rights Reserved.
 		</footer>
 	);

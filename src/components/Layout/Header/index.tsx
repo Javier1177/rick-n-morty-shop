@@ -1,9 +1,9 @@
-import './index.style.scss';
+import './header.style.scss';
 
-const className = 'header';
+const baseClass = 'header';
 
 const Header = () => {
-	return <header className={`${className}-container`}>header</header>;
+	return <header className={`${baseClass}-container`}>header</header>;
 };
 
 export default Header;
