@@ -1,0 +1,11 @@
+.productList {
+	&-container {
+		display: flex;
+	}
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 70px;
+		row-gap: 50px;
+	}
+}
