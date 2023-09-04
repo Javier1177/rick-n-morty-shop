@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+		"name": "Portal Gun",
+		"description": "A handheld device that allows you to create interdimensional portals.",
+		"price": 999.99,
+		"category": "Gadgets",
+		"image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Frickandmorty.fandom.com%2Fes%2Fwiki%2FPistola_de_Portales&psig=AOvVaw3D1NTNKMlkr4Ahso145ePR&ust=1693666026257000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLD38uHTiYEDFQAAAAAdAAAAABAE"
+	},
+	{
+		"id": 2,
+		"name": "Meeseeks Box",
+		"description": "Press the button, and a Mr. Meeseeks will appear to fulfill a single task.",
+		"price": 49.99,
+		"category": "Gadgets",
+		"image": "https://static.wikia.nocookie.net/rickandmorty/images/f/f7/Mr._Meeseeks_Box.png/revision/latest?cb=20160909153718"
+	},
+	{
+		"id": 3,
+		"name": "Plumbus",
+		"description": "A mysterious and versatile household item, every home should have one!",
+		"price": 19.99,
+		"category": "Home & Lifestyle",
+		"image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbubble.com%2Fes%2Fi%2Ftarjeta-de-felicitacion%2FPlumbus-de-Xoorum%2F61271245.5MT14&psig=AOvVaw0z5Lghg5TFKJJUDFjeObEP&ust=1693666074508000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLCDp_nTiYEDFQAAAAAdAAAAABAI"
+	},
+	{
+		"id": 4,
+		"name": "Morty's Spaceship",
+		"description": "A miniature spaceship that Morty once used for intergalactic adventures.",
+		"price": 299.99,
+		"category": "Toys",
+		"image": "https://m.media-amazon.com/images/I/51yy1+nz7OL.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Interdimensional Cable Box",
+		"description": "Access bizarre television channels from different dimensions!",
+		"price": 79.99,
+		"category": "Entertainment",
+		"image": "https://static.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest/thumbnail/width/360/height/360?cb=20160910005523"
+	},
+	{
+		"id": 6,
+		"name": "Rick's Flask",
+		"description": "A flask containing Rick's favorite interdimensional alcohol.",
+		"price": 29.99,
+		"category": "Beverages",
+		"image": "https://ae01.alicdn.com/kf/Sbdc6307fd4e149e6ad23724c9946b6aeH/Anime-Rick-Wubba-Lubba-Dub-Hip-Flask-Cosplay-Metal-Alloy-Acero-inoxidable-Pot-Bottle-Portable-Prop.jpg"
+	},
+	{
+		"id": 7,
+		"name": "Plasma Blaster",
+		"description": "A futuristic weapon capable of shooting plasma bolts.",
+		"price": 499.99,
+		"category": "Weapons",
+		"image": "https://media.printables.com/media/prints/35667/images/352786_da36a1d6-67f1-4ddd-b5b4-6c7dbb048ef2/thumbs/inside/1280x960/jpg/f30d83e20fb56f9cd0eb61b817a196aa_display_large_35.webp"
+	},
+	{
+		"id": 8,
+		"name": "Mr. Poopybutthole Doll",
+		"description": "A plush doll resembling Mr. Poopybutthole, the beloved character.",
+		"price": 19.99,
+		"category": "Toys",
+		"image": "https://i.ebayimg.com/images/g/Z9sAAOSwRgZkAx5a/s-l1200.jpg"
+	},
+	{
+		"id": 9,
+		"name": "Szechuan Sauce",
+		"description": "A limited edition dipping sauce with a hint of Szechuan flavor.",
+		"price": 9.99,
+		"category": "Condiments",
+		"image": "https://media.gq.com/photos/59d2a444e2aef44b71efc988/1:1/w_1000,h_1000,c_limit/2017_1002_GQ_Szechuan_Sauce_tout.jpg"
+	},
+	{
+		"id": 12,
+		"name": "Rick's Lab Coat",
+		"description": "A replica of Rick's iconic lab coat for all your mad scientist experiments.",
+		"price": 59.99,
+		"category": "Apparel",
+		"image": "https://img.fruugo.com/product/8/46/305873468_max.jpg"
+	},
+	{
+		"id": 14,
+		"name": "Pickle Rick Diary",
+		"description": "A journal styled with Pickle Rick",
+		"price": 12.99,
+		"category": "Books",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_N2ZqPBDGT16Zgm-1lyCzJvwbcbUchAjZGw&usqp=CAU"
+	},
+	{
+		"id": 15,
+		"name": "Jerry's Mug",
+		"description": "A coffee mug with Jerry's face",
+		"price": 9.99,
+		"category": "Kitchenware",
+		"image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.es%2FCartoon-Network-scmg24853-Rick-meeseeks-multicolor%2Fdp%2FB07BZGVYTM&psig=AOvVaw2Y6mLAqCDDsMhMN8K27iRI&ust=1693666364521000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOi9oYLViYEDFQAAAAAdAAAAABAE"
+	}
+]

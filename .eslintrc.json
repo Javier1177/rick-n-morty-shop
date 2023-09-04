@@ -45,21 +45,15 @@
 				"tabWidth": 2,
 				"indentStyle": "space",
 				"useTabs": true,
-				"trailingComma": "es5"
+				"trailingComma": "es5",
+				"arrowParens": "avoid"
 			}
 		],
-		"@typescript-eslint/no-explicit-any": "warn",
-		"@typescript-eslint/ban-types": [
-			"error",
-			{
-				"extendDefaults": true,
-				"types": {
-					"{}": false
-				}
-			}
-		],
+		"@typescript-eslint/require-await": "off",
 		"react-hooks/exhaustive-deps": "off",
 		"object-shorthand": "error",
-		"no-console": "warn"
+		"no-console": "warn",
+		"import/no-extraneous-dependencies": "off",
+		"@typescript-eslint/no-floating-promises": "off"
 	}
 }
