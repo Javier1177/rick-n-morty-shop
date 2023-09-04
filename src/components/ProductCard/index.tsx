@@ -10,7 +10,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
 	return (
 		<>
 			<h2>{name}</h2>
-			<img src={image} alt={name} />
+			<img width="100%" height="100%" src={image} alt={name} />
 			<span className={`${baseClass}-price`}>${price}</span>
 			{/* <button onClick={() => console.log('hey')}>Add to card</button> */}
 		</>
