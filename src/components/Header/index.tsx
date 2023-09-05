@@ -31,10 +31,13 @@ const Header = () => {
 				<input ref={searchRef} placeholder="Search for a product..." />
 				<button type="submit">Buscar</button>
 			</form>
-			<select onChange={onChangeOrder} defaultValue="ASC">
-				<option value="ASC">Ascendente</option>
-				<option value="DESC">Descendiente</option>
-			</select>
+			<div className={`${baseClass}-price-order`}>
+				<label htmlFor="priceOrder">Ordenar por precio:</label>
+				<select onChange={onChangeOrder} defaultValue="ASC" id="priceOrder">
+					<option value="ASC">Ascendente</option>
+					<option value="DESC">Descendiente</option>
+				</select>
+			</div>
 		</header>
 	);
 };

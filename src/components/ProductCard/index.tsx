@@ -8,12 +8,14 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
 	const { image, name, price } = product;
 
 	return (
-		<>
+		<li className={baseClass}>
 			<h2>{name}</h2>
-			<img width="100%" height="100%" src={image} alt={name} />
-			<span className={`${baseClass}-price`}>${price}</span>
-			{/* <button onClick={() => console.log('hey')}>Add to card</button> */}
-		</>
+			<img src={image} alt={name} />
+			<div className={`${baseClass}-footer`}>
+				<span className={`${baseClass}-price`}>${price}</span>
+				<button onClick={() => console.log('hey')}>Add to cart</button>
+			</div>
+		</li>
 	);
 };
 

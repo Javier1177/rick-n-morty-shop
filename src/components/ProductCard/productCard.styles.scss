@@ -1,0 +1,13 @@
+.productCard {
+	display: flex;
+	flex-direction: column;
+
+	&-footer {
+		display: flex;
+		padding: 12px;
+		align-items: center;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		gap: 12px;
+	}
+}

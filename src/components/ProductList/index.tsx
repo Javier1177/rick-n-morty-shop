@@ -12,11 +12,9 @@ const ProductList = () => {
 	if (isLoading) return <Spinner />;
 
 	return (
-		<ul className={`${baseClass}-container`}>
+		<ul className={baseClass}>
 			{productList.map(product => (
-				<li key={product.id}>
-					<ProductCard product={product} />
-				</li>
+				<ProductCard product={product} key={product.id} />
 			))}
 		</ul>
 	);

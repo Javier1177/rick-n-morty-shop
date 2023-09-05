@@ -12,8 +12,10 @@ export const useFetchMovies = () => {
 	}, [searchBar]);
 
 	const orderedProducts = useMemo(() => {
-		if (priceOrder === 'DESC' && productList.length)
+		if (priceOrder === 'DESC' && productList.length) {
 			return productList.slice().sort((a, b) => b.price - a.price);
+		}
+
 		return productList.slice().sort((a, b) => a.price - b.price);
 	}, [productList, priceOrder]);
 
