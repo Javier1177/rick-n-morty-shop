@@ -1,13 +1,19 @@
 import { create } from 'zustand';
-import { Product } from './types.d';
+import { PriceOrder, Product, ProductListState } from './types.d';
 
-interface State {
-	productList: Product[];
-	fetchProductList: () => Promise<void>;
-}
-
-export const useProductList = create<State>(set => ({
+export const useProductList = create<ProductListState>(set => ({
 	productList: [],
+	searchBar: '',
+	priceOrder: 'ASC',
+
+	setSearchBar: value => {
+		set({ searchBar: value });
+	},
+
+	setPriceOrder: (value: PriceOrder) => {
+		set({ priceOrder: value });
+	},
+
 	fetchProductList: async () => {
 		try {
 			const response = await fetch('http://localhost:5173/products.json');

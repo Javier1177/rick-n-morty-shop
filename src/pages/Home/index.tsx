@@ -1,8 +1,12 @@
 import ProductList from '../../components/ProductList';
 
+import './home.styles.scss';
+
+const baseClass = 'Home';
+
 const Home = () => {
 	return (
-		<main>
+		<main className={baseClass}>
 			<ProductList />
 		</main>
 	);
