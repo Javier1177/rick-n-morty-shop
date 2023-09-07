@@ -9,12 +9,21 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 999;
-}
 
-.modal-content {
-	background-color: white;
-	padding: 20px;
-	border-radius: 8px;
-	position: relative;
-	color: red;
+	&-content {
+		background-color: white;
+		padding: 20px;
+		border-radius: 8px;
+		text-align: center;
+		color: black;
+		width: 30%;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	&-close {
+		margin-top: 40px;
+	}
 }

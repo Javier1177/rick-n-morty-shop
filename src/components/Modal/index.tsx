@@ -2,15 +2,17 @@ import { ModalProps } from './modal.d';
 
 import './modal.styles.scss';
 
+const baseClass = 'modal';
+
 const Modal = ({ isOpen, onClose, children }: ModalProps) => {
 	if (!isOpen) return null;
 
 	return (
-		<div className="modal">
-			<div className="modal-content">
+		<div className={`${baseClass}`}>
+			<div className={`${baseClass}-content`}>
 				{children}
-				<button className="modal-close" onClick={onClose}>
-					Cierra
+				<button className={`${baseClass}-close`} onClick={onClose}>
+					Ok!
 				</button>
 			</div>
 		</div>
