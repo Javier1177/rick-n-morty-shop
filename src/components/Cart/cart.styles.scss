@@ -13,6 +13,12 @@
 		&-name {
 			color: black;
 		}
+
+		&-delete {
+			background-color: red;
+			padding: 6px;
+			margin-left: 10px;
+		}
 	}
 
 	&-total {

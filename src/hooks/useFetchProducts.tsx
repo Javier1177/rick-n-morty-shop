@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { useProductList } from '../store/productsList/productsList';
 
-export const useFetchMovies = () => {
+export const useFetchProducts = () => {
 	const fetchProducts = useProductList(state => state.fetchProductList);
 	const productList = useProductList(state => state.productList);
 	const searchBar = useProductList(state => state.searchBar);

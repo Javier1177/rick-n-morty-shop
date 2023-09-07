@@ -1,11 +1,12 @@
 import { useCartPorducts } from '../../hooks/useCartProducts';
+import TrashIcon from '../../assets/trash-white.svg';
 
 import './cart.styles.scss';
 
 const baseClass = 'cart';
 
 const Cart = () => {
-	const { getTotalCart, cartList } = useCartPorducts();
+	const { getTotalCart, cartList, deleteCartItem } = useCartPorducts();
 
 	if (!cartList.length)
 		return (
@@ -27,7 +28,20 @@ const Cart = () => {
 					<div>
 						<h2 className={`${baseClass}-element-name`}>{product.name}</h2>
 						<div>
-							{product.quantity} x ${product.price}
+							<span>
+								{product.quantity} x ${product.price}
+							</span>
+							<button
+								className={`${baseClass}-element-delete`}
+								onClick={() => deleteCartItem(product.id)}
+							>
+								<img
+									width="15px"
+									height="15px"
+									src={TrashIcon}
+									alt="Delete icon"
+								/>
+							</button>
 						</div>
 					</div>
 				</div>

@@ -37,4 +37,10 @@ export const useCart = create<CartState>((set, get) => ({
 		}, 0);
 		return totalPrice;
 	},
+	deleteCartItem: (id: number) => {
+		const cart = get().cartList;
+		const filteredCart = cart.filter(cartProduct => cartProduct.id !== id);
+
+		set({ cartList: filteredCart });
+	},
 }));

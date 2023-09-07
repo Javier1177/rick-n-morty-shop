@@ -42,7 +42,7 @@ const Header = () => {
 					width="50px"
 					height="50px"
 					src={CartIcon}
-					alt="My SVG"
+					alt="Cart icon"
 					onClick={() => setIsModalOpen(true)}
 				/>
 				<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>

@@ -1,4 +1,4 @@
-import { useFetchMovies } from '../../hooks/useFetchMovies';
+import { useFetchProducts } from '../../hooks/useFetchProducts';
 import ProductCard from '../ProductCard';
 import Spinner from '../Spinner';
 
@@ -7,7 +7,7 @@ import './productList.style.scss';
 const baseClass = 'productList';
 
 const ProductList = () => {
-	const { isLoading, productList } = useFetchMovies();
+	const { isLoading, productList } = useFetchProducts();
 
 	if (isLoading) return <Spinner />;
 
