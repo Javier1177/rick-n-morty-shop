@@ -1,6 +1,9 @@
 import { create } from 'zustand';
 import { PriceOrder, Product, ProductListState } from './types.d';
 
+// Aquí creo la store del listado de productos junto con sus "reducers/actions" que podríamos encontrar en Redux.
+// Al hacer el fetch decido controlar si hay un error con el try/catch.
+
 export const useProductList = create<ProductListState>(set => ({
 	productList: [],
 	searchBar: '',

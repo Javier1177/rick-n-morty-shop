@@ -59,8 +59,9 @@ To help me to decide which would I use, I analyzed which was better in each case
 After analyzing these tools, I decided to choose Zustand.
 
 The reason was that I hadn't a lot of time to work with the project, so I tried to avoid losing time with the boilerplate due to the deadline. If in a future we would like to add some new feature, it would be easier to add it using Zustand as well. And lastly, I didn't use React Context because the "Cart state" will have many changes and it could affect the app performance.
+When I needed to fetch data from my JSON and manage it with my store, I decided to attempt to separate my logic from the components. For this reason, I created custom hooks where I could map the API response. By doing this, if anything in the response were to change in the future, I would only need to modify that logic without affecting the components.
 
-...
+After creating several components, I began working on the styling, which is the part I find the most challenging. With this in mind, I decided to use WaterCSS to create the basic styling for buttons, text, and other elements, allowing me to focus solely on the page structure and its responsiveness.
 
 ## How do I initiate the project?
 

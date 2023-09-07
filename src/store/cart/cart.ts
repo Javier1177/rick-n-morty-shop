@@ -2,6 +2,10 @@ import { create } from 'zustand';
 import { CartState } from './types.d';
 import { Product } from '../productsList/types';
 
+// Aquí creo la store del Carrito junto con sus "reducers/actions" que podríamos encontrar en Redux.
+// Además decido crear los metodos para seleccionar/modificar la info de la store, para no tener que hacerla dentro del componente.
+// Así evito tocar el componente si cambia algo de la lógica.
+
 export const useCart = create<CartState>((set, get) => ({
 	cartList: [],
 
