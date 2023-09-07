@@ -14,7 +14,7 @@ This is a list of all the tools that I used during the development of the projec
 - [Zustand](https://github.com/pmndrs/zustand) (App Store)
 - Eslint
 - Prettier
-- ...
+- Sweet Alert 2.
 
 ## Challenges / Decisions
 

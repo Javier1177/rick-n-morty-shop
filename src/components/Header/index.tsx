@@ -1,14 +1,20 @@
-import { useRef } from 'react';
-import './header.styles.scss';
-import { useProductList } from '../../store/productsList/productsList';
+import { useRef, useState } from 'react';
+
+import { useSetFilters } from '../../hooks/useSetFilters';
 import { PriceOrder } from '../../store/productsList/types';
+import Modal from '../Modal';
+import Cart from '../Cart';
+
+import CartIcon from '../../assets/cart-white.svg';
+
+import './header.styles.scss';
 
 const baseClass = 'header';
 
 const Header = () => {
 	const searchRef = useRef<HTMLInputElement | null>(null);
-	const setSearchBar = useProductList(state => state.setSearchBar);
-	const setPriceOrder = useProductList(state => state.setPriceOrder);
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const { setPriceOrder, setSearchBar } = useSetFilters();
 
 	const handleSumbit = (event: React.FormEvent) => {
 		event.preventDefault();
@@ -31,6 +37,18 @@ const Header = () => {
 				<input ref={searchRef} placeholder="Search for a product..." />
 				<button type="submit">Buscar</button>
 			</form>
+			<div className={`${baseClass}-cart`}>
+				<img
+					width="50px"
+					height="50px"
+					src={CartIcon}
+					alt="My SVG"
+					onClick={() => setIsModalOpen(true)}
+				/>
+				<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+					<Cart />
+				</Modal>
+			</div>
 			<div className={`${baseClass}-price-order`}>
 				<label htmlFor="priceOrder">Ordenar por precio:</label>
 				<select onChange={onChangeOrder} defaultValue="ASC" id="priceOrder">
