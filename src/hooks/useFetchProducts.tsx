@@ -7,6 +7,11 @@ export const useFetchProducts = () => {
 	const searchBar = useProductList(state => state.searchBar);
 	const priceOrder = useProductList(state => state.priceOrder);
 
+	// El hook para pedir los productos lo coloco aquí porque, al ser un listado de productos de
+	// una tienda, es necesario saber que productos están disponibles y cuales no. Por lo que es
+	// importante tener la información lo mas actualizada posible. Por esta razón, cada vez que vaya a
+	// utilizar los productos de este hook quiero que se vuelva a hacer la llamada.
+	// Si este no fuese el caso se tendría que mover el hook a la propia pagina.
 	useEffect(() => {
 		fetchProducts();
 	}, [searchBar]);
